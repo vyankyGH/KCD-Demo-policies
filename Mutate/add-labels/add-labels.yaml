@@ -19,9 +19,6 @@ spec:
       resources:
         kinds:
         - Pod
-        - Service
-        - ConfigMap
-        - Secret
     mutate:
       patchStrategicMerge:
         metadata:

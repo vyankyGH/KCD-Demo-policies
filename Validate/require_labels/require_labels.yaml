@@ -10,12 +10,6 @@ spec:
       resources:
         kinds:
         - Pod
-    exclude:
-      resources:
-        namespaces:
-          - "kube-system"
-          - "kube-public"
-          - "kyverno"
     validate:
       message: "The label `app.kubernetes.io/name` is required."
       pattern:
