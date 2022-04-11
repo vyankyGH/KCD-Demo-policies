@@ -1,7 +1,7 @@
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:
-  name: inject-sidecar
+  name: inject-sidecar-with-extrenal-data
   annotations:
     policies.kyverno.io/title: Inject Sidecar Container
     policies.kyverno.io/category: Sample
@@ -22,7 +22,7 @@ spec:
     context:
       - name: dictionary
         configMap:
-          name: some-config-map
+          name: demo
     mutate:
       patchStrategicMerge:
         spec:
