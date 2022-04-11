@@ -10,9 +10,3 @@ results:
     patchedResource: patchedResource1.yaml
     kind: Deployment
     result: pass
-  - policy: inject-sidecar
-    rule: inject-sidecar
-    resource: mydeploy-2
-    patchedResource: patchedResource2.yaml
-    kind: Deployment
-    result: skip
